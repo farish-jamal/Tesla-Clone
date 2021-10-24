@@ -19,6 +19,12 @@
     cursor: pointer;
     font-weight: 600;
     font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
 }
 
 .header__links p:hover{
