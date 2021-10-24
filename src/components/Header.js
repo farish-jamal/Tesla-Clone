@@ -14,6 +14,8 @@ function Header() {
                 <p>Model 3</p>
                 <p>Model x</p>
                 <p>Model y</p>
+                <p>solar roof</p>
+                <p>solar panel</p>
             </div>
             <div className="header__right">
                 <p>Shop</p>

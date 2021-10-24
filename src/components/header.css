@@ -12,13 +12,18 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 .header__links p, .header__right p{
-    padding: 0 15px;
+    padding: 5px 15px;
     cursor: pointer;
     font-weight: 600;
     font-size: 14px;
+}
+
+.header__links p:hover{
+    background-color: rgba(231, 231, 231, 0.322);
+    border-radius: 100px;
 }
 
 @media screen and (max-width: 768px) {

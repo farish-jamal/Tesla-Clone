@@ -7,7 +7,7 @@
 .section__info{
     text-align: center;
     margin-top: 15vh;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 .section__info p{
     text-transform: capitalize;
@@ -36,6 +36,7 @@
     text-transform: uppercase;
     text-align: center;
     font-size: 13px;
+    opacity: 0.06;
 }
 .rightBtn{
     background-color: #fff;
