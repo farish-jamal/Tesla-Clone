@@ -9,7 +9,7 @@ import solarP from "./assets/solar-panel.jpg";
 import solarR from "./assets/solar-roof.jpg";
 import access from "./assets/accessories.jpg";
 import Footer from "./components/Footer";
-import Models from "./components/routes/Models";
+import Models from "./components/cars/Models";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
