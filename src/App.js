@@ -9,10 +9,7 @@ import solarP from "./assets/solar-panel.jpg";
 import solarR from "./assets/solar-roof.jpg";
 import access from "./assets/accessories.jpg";
 import Footer from "./components/Footer";
-import ModelS from "./components/routes/ModelS";
-import ModelX from "./components/routes/ModelX";
-import Model3 from "./components/routes/Model3";
-import ModelY from "./components/routes/ModelY";
+import Model from "./components/routes/Models";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -23,16 +20,40 @@ function App() {
         <Header />
         <Switch>
           <Route path="/models">
-            <ModelS />
+          <Model
+              backgroundImg={modelS}
+              title="Model S"
+              range="390 mi"
+              peakPower="1,020 hp"
+              topSpeed="200 kmph"
+            />
           </Route>
           <Route path="/modelx">
-            <ModelX />
+            <Model
+              backgroundImg={modelX}
+              title="Model X"
+              range="350 mi"
+              peakPower="1,130 hp"
+              topSpeed="150 kmph"
+            />
           </Route>
           <Route path="/modely">
-            <ModelY />
+          <Model
+              backgroundImg={modelY}
+              title="Model Y"
+              range="410 mi"
+              peakPower="1,040 hp"
+              topSpeed="190 kmph"
+            />
           </Route>
           <Route path="/model3">
-            <Model3 />
+          <Model
+              backgroundImg={model3}
+              title="Model 3"
+              range="400 mi"
+              peakPower="1100 hp"
+              topSpeed="200 kmph"
+            />
           </Route>
           <Route path="/">
             <Section
