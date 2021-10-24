@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 
 const Section = ({backgroundImg, title, desc, leftBtn, rightBtn}) => {
     return (
-        <div className="section" style={{background: `url(${backgroundImg})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <div className="section" style={{background: `url(${backgroundImg}) no-repeat center / cover`}}>
             <div className="section__info">
             <Fade bottom>
                 <h1>{title}</h1>

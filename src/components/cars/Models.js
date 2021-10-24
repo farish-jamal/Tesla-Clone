@@ -4,7 +4,7 @@ import './model.css'
 
 function ModelX({backgroundImg, topSpeed, range,peakPower, title}) {
     return (
-        <div className="models" style={{background: `url(${backgroundImg})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <div className="models" style={{background: `url(${backgroundImg}) no-repeat center / cover`}}>
             <div className="models__info">
                 <Fade bottom>
                 <div className="models__name">

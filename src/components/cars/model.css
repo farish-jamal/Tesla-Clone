@@ -1,6 +1,7 @@
 .models{
     height: 100vh;
     color: #fff;
+    background-size: cover;
 }
 p{
     font-size: 14px;

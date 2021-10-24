@@ -39,7 +39,7 @@ function App() {
           </Route>
           <Route path="/modely">
           <Models
-              backgroundImg={modelY}
+              backgroundImg="https://tesla-cdn.thron.com/delivery/public/image/tesla/0cf18940-c0bf-45f7-b2d8-46c3bc693c65/bvlatuR/std/0x0/model-y_R1@2"
               title="Model Y"
               range="410 mi"
               peakPower="1,040 hp"
@@ -48,7 +48,7 @@ function App() {
           </Route>
           <Route path="/model3">
           <Models
-              backgroundImg={model3}
+              backgroundImg="https://sm.mashable.com/mashable_in/seo/default/teslas-model-3-teardown-reveals-how-advanced-its-technology_a4pg.jpg"
               title="Model 3"
               range="400 mi"
               peakPower="1100 hp"
