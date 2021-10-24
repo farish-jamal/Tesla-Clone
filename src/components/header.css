@@ -1,0 +1,20 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header__links, .header__right{
+    display: flex;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.header__links p, .header__right p{
+    padding: 0 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
