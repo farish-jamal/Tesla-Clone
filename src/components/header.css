@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 15px 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -10,6 +10,7 @@
 }
 .header__links, .header__right{
     display: flex;
+    align-items: center;
     cursor: pointer;
     text-transform: uppercase;
 }
@@ -17,4 +18,14 @@
     padding: 0 15px;
     cursor: pointer;
     font-weight: 600;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .header__links{
+        display: none;
+    }
+    .header__right p{
+        padding: 0 10px;
+    }
 }

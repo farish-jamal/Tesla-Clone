@@ -7,7 +7,7 @@ function Header() {
     return (
         <div className="header">
             <div className="header__logo">
-                <img src={TeslaLogo} alt="main_logo" />
+                <img src={TeslaLogo} alt="main_logo" style={{width: '80px'}}/>
             </div>
             <div className="header__links">
                 <p>Model s</p>
@@ -17,7 +17,7 @@ function Header() {
             </div>
             <div className="header__right">
                 <p>Shop</p>
-                <p>Tesla Account</p>
+                <p>Account</p>
                  <MenuIcon />
             </div>
         </div>
