@@ -9,7 +9,7 @@ import solarP from "./assets/solar-panel.jpg";
 import solarR from "./assets/solar-roof.jpg";
 import access from "./assets/accessories.jpg";
 import Footer from "./components/Footer";
-import Model from "./components/routes/Models";
+import Models from "./components/routes/Models";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -20,7 +20,7 @@ function App() {
         <Header />
         <Switch>
           <Route path="/models">
-          <Model
+          <Models
               backgroundImg={modelS}
               title="Model S"
               range="390 mi"
@@ -29,7 +29,7 @@ function App() {
             />
           </Route>
           <Route path="/modelx">
-            <Model
+            <Models
               backgroundImg={modelX}
               title="Model X"
               range="350 mi"
@@ -38,7 +38,7 @@ function App() {
             />
           </Route>
           <Route path="/modely">
-          <Model
+          <Models
               backgroundImg={modelY}
               title="Model Y"
               range="410 mi"
@@ -47,7 +47,7 @@ function App() {
             />
           </Route>
           <Route path="/model3">
-          <Model
+          <Models
               backgroundImg={model3}
               title="Model 3"
               range="400 mi"
