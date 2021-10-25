@@ -17,8 +17,8 @@ function Header() {
           <Link to="/model3"><p>Model 3</p></Link>
           <Link to="/modelx"><p>Model x</p></Link>
           <Link to="/modely"><p>Model y</p></Link>
-          <p>solar roof</p>
-          <p>solar panel</p>
+          <Link to="/roofs"><p>solar roof</p></Link>
+          <Link to="/panels"><p>solar panel</p></Link>
       </div>
       <div className="header__right">
         <p>Shop</p>

@@ -15,6 +15,7 @@ p{
 }
 .models__name{
     margin-top: 17vh;
+    text-align: center;
 }
 .models__specs{
     display: flex;

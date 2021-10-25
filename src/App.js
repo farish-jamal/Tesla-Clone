@@ -10,6 +10,7 @@ import solarR from "./assets/solar-roof.jpg";
 import access from "./assets/accessories.jpg";
 import Footer from "./components/Footer";
 import Models from "./components/cars/Models";
+import interior from "./assets/new-interior.jpg";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -26,6 +27,8 @@ function App() {
               range="390 mi"
               peakPower="1,020 hp"
               topSpeed="200 kmph"
+              color="#000"
+              backdropImg={interior}
             />
           </Route>
           <Route path="/modelx">
@@ -35,6 +38,8 @@ function App() {
               range="350 mi"
               peakPower="1,130 hp"
               topSpeed="150 kmph"
+              color="#000"
+              backdropImg={interior}
             />
           </Route>
           <Route path="/modely">
@@ -44,6 +49,8 @@ function App() {
               range="410 mi"
               peakPower="1,040 hp"
               topSpeed="190 kmph"
+              color="#000"
+              backdropImg={interior}
             />
           </Route>
           <Route path="/model3">
@@ -53,6 +60,32 @@ function App() {
               range="400 mi"
               peakPower="1100 hp"
               topSpeed="200 kmph"
+              color="#000"
+              backdropImg={interior}
+            />
+          </Route>
+          <Route path="/roofs">
+          <Models
+              backgroundImg="https://images.hgmsites.net/lrg/solarcity-roof-tile-replacing-solar-panels_100579173_l.jpg"
+              title="Solar Roof"
+              range="25-Year"
+              peakPower="24/7"
+              desc="Transform your roof and produce clean energy"
+              topSpeed="Solar Roof"
+              color="#fff"
+              backdropImg="https://cleantechnica.com/files/2019/10/tesla-solarglass-roof-version-3-TESLA-OFFICIAL.jpg"
+            />
+          </Route>
+          <Route path="/panels">
+          <Models
+              backgroundImg={solarP}
+              title="Solar for Existing Roofs"
+              desc="Lowest Cost Solar Panels in America—Money-back guarantee"
+              range="$"
+              peakPower="24/7"
+              topSpeed="Solar Panels"
+              color="#000"
+              backdropImg="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/itRCZaRhXY7s/v0/-1x-1.jpg"
             />
           </Route>
           <Route path="/">
