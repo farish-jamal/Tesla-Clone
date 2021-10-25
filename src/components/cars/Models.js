@@ -1,5 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+import Description from './Description';
 import Inside from './Inside';
 import './model.css'
 
@@ -35,6 +36,7 @@ function ModelX({backgroundImg, topSpeed, range,peakPower, title, color, desc, b
             </div>
         </div>
             <Inside backdropImg={backdropImg}/>
+            <Description />
         </>
     )
 }

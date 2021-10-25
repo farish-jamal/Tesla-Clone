@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
+import { Link } from "react-router-dom";
 
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -30,20 +31,84 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Exisiting Inventory", "Used Inventory", "Trade-In", "Test Drive", "Cybertruck", "Semi", "Roadstar", "Charging", "Powerwall", "Commerical Energy", "Utilities", "Find Us", "Support"].map(
-          (text, index) => (
-            <ListItem
-              button
-              key={text}
-              style={{
-                margin: "20px 0",
-                borderRadius: "100px",
-              }}
-            >
-              <ListItemText primary={text} style={{ marginLeft: '10px' }} />
-            </ListItem>
-          )
-        )}
+        <Link to="/models">
+          <ListItem
+            button
+            key="Model S"
+            style={{ margin: "20px 0", borderRadius: "100px" }}
+          >
+            <ListItemText primary="Model S" style={{ marginLeft: "10px" }} />
+          </ListItem>
+        </Link>
+        <Link to="/model3">
+          <ListItem
+            button
+            key="Model 3"
+            style={{ margin: "20px 0", borderRadius: "100px" }}
+          >
+            <ListItemText primary="Model 3" style={{ marginLeft: "10px" }} />
+          </ListItem>
+        </Link>
+        <Link to="/modelx">
+          <ListItem
+            button
+            key="Model X"
+            style={{ margin: "20px 0", borderRadius: "100px" }}
+          >
+            <ListItemText primary="Model X" style={{ marginLeft: "10px" }} />
+          </ListItem>
+        </Link>
+        <Link to="/modely">
+          <ListItem
+            button
+            key="Model Y"
+            style={{ margin: "20px 0", borderRadius: "100px" }}
+          >
+            <ListItemText primary="Model Y" style={{ marginLeft: "10px" }} />
+          </ListItem>
+        </Link>
+        <Link to="/roofs">
+          <ListItem
+            button
+            key="Solar Roofs"
+            style={{ margin: "20px 0", borderRadius: "100px" }}
+          >
+            <ListItemText
+              primary="Solar Roofs"
+              style={{ marginLeft: "10px" }}
+            />
+          </ListItem>
+        </Link>
+        <Link to="/panels">
+          <ListItem
+            button
+            key="Solar Panel"
+            style={{ margin: "20px 0", borderRadius: "100px" }}
+          >
+            <ListItemText
+              primary="Solar Panel"
+              style={{ marginLeft: "10px" }}
+            />
+          </ListItem>
+        </Link>
+        <Link to="/">
+          <ListItem
+            button
+            key="Trade In"
+            style={{ margin: "20px 0", borderRadius: "100px" }}
+          >
+            <ListItemText primary="Trade In" style={{ marginLeft: "10px" }} />
+          </ListItem>
+        </Link>
+        <Link to="/">
+          <ListItem
+            button
+            key="Test Drive"
+            style={{ margin: "20px 0", borderRadius: "100px" }}
+          >
+            <ListItemText primary="Test Drive" style={{ marginLeft: "10px" }} />
+          </ListItem>
+        </Link>
       </List>
     </Box>
   );

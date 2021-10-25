@@ -1,0 +1,30 @@
+.desc__items{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    height: 100%;
+    margin: 0px 15vw;
+    color: #fff;
+}
+.desc__items img{
+   width: 470px;
+}
+.desc__info{
+    padding: 0 70px;
+}
+.desc__info h4{
+    padding: 8px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .desc__items{
+        flex-direction: column;
+    }
+    .desc__items img{
+        width: 80vw;
+     }
+     .desc__info{
+        padding: 25px 10px;
+        flex: 1;
+    }
+}
