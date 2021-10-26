@@ -15,7 +15,12 @@
 .desc__info h4{
     padding: 8px 0;
 }
-
+.disable{
+    display: none;
+}
+.desktop{
+    display: block;
+}
 @media screen and (max-width: 768px) {
     .desc__items{
         flex-direction: column;
@@ -25,6 +30,11 @@
      }
      .desc__info{
         padding: 25px 10px;
-        flex: 1;
+    }
+    .disable{
+        display: block;
+    }
+    .desktop{
+        display: none;
     }
 }

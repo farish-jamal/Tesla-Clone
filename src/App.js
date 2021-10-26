@@ -29,6 +29,9 @@ function App() {
               topSpeed="200 kmph"
               color="#000"
               backdropImg={interior}
+              speed="Top Speed"
+              range_p="Range (est.)"
+              peak="Peak Power"
             />
           </Route>
           <Route path="/modelx">
@@ -40,6 +43,9 @@ function App() {
               topSpeed="150 kmph"
               color="#000"
               backdropImg={interior}
+              speed="Top Speed"
+              range_p="Range (est.)"
+              peak="Peak Power"
             />
           </Route>
           <Route path="/modely">
@@ -51,6 +57,9 @@ function App() {
               topSpeed="190 kmph"
               color="#000"
               backdropImg={interior}
+              speed="Top Speed"
+              range_p="Range (est.)"
+              peak="Peak Power"
             />
           </Route>
           <Route path="/model3">
@@ -62,6 +71,9 @@ function App() {
               topSpeed="200 kmph"
               color="#000"
               backdropImg={interior}
+              speed="Top Speed"
+              range_p="Range (est.)"
+              peak="Peak Power"
             />
           </Route>
           <Route path="/roofs">
@@ -74,6 +86,9 @@ function App() {
               topSpeed="Solar Roof"
               color="#fff"
               backdropImg="https://cleantechnica.com/files/2019/10/tesla-solarglass-roof-version-3-TESLA-OFFICIAL.jpg"
+              speed=" Sunlight to Energy"
+              range_p="Warranty"
+              peak="Protection"
             />
           </Route>
           <Route path="/panels">
@@ -81,11 +96,14 @@ function App() {
               backgroundImg={solarP}
               title="Solar for Existing Roofs"
               desc="Lowest Cost Solar Panels in America—Money-back guarantee"
-              range="$"
+              range="25-Year"
               peakPower="24/7"
               topSpeed="Solar Panels"
               color="#000"
               backdropImg="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/itRCZaRhXY7s/v0/-1x-1.jpg"
+              speed=" Sunlight to Energy"
+              range_p="Warranty"
+              peak="Protection"
             />
           </Route>
           <Route path="/">

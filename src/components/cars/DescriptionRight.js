@@ -1,5 +1,4 @@
 import React from "react";
-import game from "../../assets/game.jpg";
 import "./descInfo.css";
 import Fade from "react-reveal/Fade";
 

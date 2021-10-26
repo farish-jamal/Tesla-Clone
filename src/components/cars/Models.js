@@ -4,7 +4,7 @@ import Description from './Description';
 import Inside from './Inside';
 import './model.css'
 
-function ModelX({backgroundImg, topSpeed, range,peakPower, title, color, desc, backdropImg}) {
+function ModelX({backgroundImg, topSpeed, range,peakPower, title, color, desc, backdropImg, speed, range_p, peak}) {
     return (
         <>
         <div className="models" style={{background: `url(${backgroundImg}) no-repeat center / cover`}}>
@@ -19,15 +19,15 @@ function ModelX({backgroundImg, topSpeed, range,peakPower, title, color, desc, b
                 <div className="models__specs">
                     <div className="topSpeed">
                     <h2>{topSpeed}</h2>
-                    <p>Top Speed</p>
+                    <p>{speed}</p>
                     </div>
                     <div className="topSpeed">
                     <h2>{range}</h2>
-                    <p>Range (est.)</p>
+                    <p>{range_p}</p>
                     </div>
                      <div className="topSpeed">
                      <h2>{peakPower}</h2>
-                     <p>Peak Power</p>
+                     <p>{peak}</p>
                      </div>
                      
                       <div className="btn">Order Now</div>
