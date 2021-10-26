@@ -4,7 +4,7 @@ import Description from './Description';
 import Inside from './Inside';
 import './model.css'
 
-function ModelX({backgroundImg, topSpeed, range,peakPower, title, color, desc, backdropImg, speed, range_p, peak}) {
+function ModelX({backgroundImg, topSpeed, range,peakPower, title, color, desc, backdropImg, speed, range_p, peak, game, connected, audio}) {
     return (
         <>
         <div className="models" style={{background: `url(${backgroundImg}) no-repeat center / cover`}}>
@@ -36,7 +36,11 @@ function ModelX({backgroundImg, topSpeed, range,peakPower, title, color, desc, b
             </div>
         </div>
             <Inside backdropImg={backdropImg}/>
-            <Description />
+            <Description game={game}
+              connected={connected}
+              audio={audio}
+              backdropImg={backdropImg}
+            />
         </>
     )
 }

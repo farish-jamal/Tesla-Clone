@@ -1,12 +1,8 @@
 import React from "react";
 import DescriptionRight from "./DescriptionRight";
 import DescriptionLeft from "./DescriptionLeft";
-import game from "../../assets/game.jpg";
-import connected from "../../assets/connected.jpg";
-import audio from "../../assets/audio.jpg";
-import interior from "../../assets/new-interior.jpg";
 
-function Description() {
+function Description({game, audio, connected, backdropImg}) {
   return (
     <div style={{ backgroundColor: "#000", padding: '80px 0' }}>
       <DescriptionRight
@@ -27,7 +23,7 @@ function Description() {
       <DescriptionLeft
         title="Real Storage"
         desc="With front and rear trunks and fold-flat seats, Model S is a luxury car where you can fit your bike without taking the wheel off, and your luggage too."
-        img={interior}
+        img={backdropImg}
       />
     </div>
   );
